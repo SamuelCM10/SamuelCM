@@ -4,9 +4,10 @@ public class Ejemplo1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Hola Mundo");
-
-
+	
+		String nombre = "Samuel";
+		System.out.print("Hola Mundo, me llamo ");
+		System.out.println(nombre);
 	}
 
 }
