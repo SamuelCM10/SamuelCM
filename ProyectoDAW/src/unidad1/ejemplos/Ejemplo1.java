@@ -13,15 +13,20 @@ public class Ejemplo1 {
 	//Animal
 		int id;
 		id = 333444555;
-		String nombrePet = "Mussolinni";
+		String nombrePet = "Perro";
 		char sexo;
 		byte edad;
-		String raza;
-		float peso;
+		String raza= "Gato";
+		double peso= 13.7;
 		boolean estaVacunado;
 		boolean estaCastrado;
-		String motivoConsulta;
-		
+		String motivoConsulta="Revisión";
+	//Pantalla
+		System.out.println("DNI: "+dni);
+		System.out.println("Nombre: "+nombre);
+		System.out.println("Dirección: "+direccion);
+		System.out.println("Teléfono: "+telefono);
+		System.out.println("CP: "+cp);
 		
 	}
 
