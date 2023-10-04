@@ -14,8 +14,8 @@ public class Ejemplo1 {
 		int id;
 		id = 333444555;
 		String nombrePet = "Perro";
-		char sexo;
-		byte edad;
+		char sexo='H';
+		byte edad=10;
 		String raza= "Gato";
 		double peso= 13.7;
 		boolean estaVacunado;
@@ -27,7 +27,8 @@ public class Ejemplo1 {
 		System.out.println("Dirección: "+direccion);
 		System.out.println("Teléfono: "+telefono);
 		System.out.println("CP: "+cp);
-		
+	
 	}
+	
 
 }
