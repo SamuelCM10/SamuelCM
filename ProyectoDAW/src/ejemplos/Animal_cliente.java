@@ -1,6 +1,6 @@
-package unidad1.ejemplos;
+package ejemplos;
 
-public class Ejemplo1 {
+public class Animal_cliente {
 
 	public static void main(String[] args) {
 		

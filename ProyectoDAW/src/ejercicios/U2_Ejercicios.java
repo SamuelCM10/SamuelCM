@@ -1,4 +1,4 @@
-package unidad1.ejemplos;
+package ejercicios;
 
 public class U2_Ejercicios {
 
@@ -10,10 +10,18 @@ public class U2_Ejercicios {
 	//Ejercicio 4
 		byte hermanos=1;
 		byte notaFinal=5;
-		double pMundial=7888000000;
+		long pMundial= 788800000;
 		int provinciaEspaña=1000000;
 		byte pasajerosBus=64;
-		byte 
+		byte puntosGasol=53;
+		double priceChorizo= 2.50;
+		short mundialEspaña=2010;
+		byte cienPies=100;
+		double seatPanda=4.500;
+	//Ejercicio 5
+		
+		
+
 		
 
 	}
