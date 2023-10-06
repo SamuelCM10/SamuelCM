@@ -19,7 +19,15 @@ public class U2_Ejercicios {
 		byte cienPies=100;
 		double seatPanda=4.500;
 	//Ejercicio 5
-		
+		//a Si
+		//b No, no puede empezar por número.
+		//c No, & se reconoce como signo de puntuación.
+		//d No, no puede empezar por_.
+		//e Si
+		//f Si
+		//g No, no se pueden usar comillas.
+		//h Si
+		//i Si
 		
 
 		
