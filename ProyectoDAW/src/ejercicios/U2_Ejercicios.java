@@ -28,7 +28,18 @@ public class U2_Ejercicios {
 		//g No, no se pueden usar comillas.
 		//h Si
 		//i Si
-		
+	//Ejercicio 6
+		//a byte
+		//b float
+		//c short
+		//d float
+		//e char
+		//f string
+		//g boolean
+		//h string
+		//i string
+	//Ejercicio 7
+	
 
 		
 
