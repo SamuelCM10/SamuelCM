@@ -1,5 +1,7 @@
 package ejercicios;
 
+import java.util.Scanner;
+
 public class U2_Ejercicios {
 
 	public static void main(String[] args) {
@@ -39,7 +41,43 @@ public class U2_Ejercicios {
 		//h string
 		//i string
 	//Ejercicio 7
+	//Ejercicio 8
+		final byte  EOF= -1;
+		
+		
+		
+		
+		
+		//9
+		//21
+		double kmDay;
+		double priceLiter;
+		double kmLiter;
+		double parkTaxe;
+		double peajeDay;
+		
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Introduzca los km totales recorridos en un día: ");
+		kmDay= entrada.nextDouble();
+		System.out.println("Introduzca el coste del litros de gasolina: ");
+		priceLiter= entrada.nextDouble();
+		System.out.println("Introduzca el promedio de km/l: ");
+		kmLiter= entrada.nextDouble();
+		System.out.println("Introduzca el coste por tarifas de estacionamiento al día: ");
+		parkTaxe= entrada.nextDouble();
+		System.out.println("Introduzca el coste por peajes diario: ");
+		peajeDay= entrada.nextDouble();
+		
+		float costeTotal=kmDay*kmLiter*priceLiter+parkTaxe+peajeDay;
+		System.out.println("Un viaje diario cuesta:"+costeTotal);
+		
+		
 	
+		
+		//22
+		//23
+		
+		
 
 		
 
