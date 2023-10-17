@@ -68,8 +68,9 @@ public class U2_Ejercicios {
 		System.out.println("Introduzca el coste por peajes diario: ");
 		peajeDay= entrada.nextDouble();
 		
-		float costeTotal=kmDay*kmLiter*priceLiter+parkTaxe+peajeDay;
+		double costeTotal=kmDay*kmLiter*priceLiter+parkTaxe+peajeDay;
 		System.out.println("Un viaje diario cuesta:"+costeTotal);
+		entrada.close();
 		
 		
 	
