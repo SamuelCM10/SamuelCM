@@ -10,7 +10,7 @@ public class Sorteo {
 		int eleccion;
 		int contador=1;
 		System.out.println("Introduce el número: ");
-		eleccion= entrada.nextInt();
+		eleccion=entrada.nextInt();
 		
 		while(sorteo!=eleccion) {
 			System.out.println("Prueba otra vez: ");
