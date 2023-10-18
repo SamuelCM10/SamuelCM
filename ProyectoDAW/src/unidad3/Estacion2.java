@@ -15,9 +15,14 @@ public class Estacion2 {
 			System.out.println("INVIERNO");
 		}else if(mes>=3 && mes <=5) {
 			System.out.println("PRIMAVERA");
+		}else if(mes>=6 && mes <=8) {
+			System.out.println("VERANO");
+		}else if(mes>=9 && mes <=11) {
+			System.out.println("OTOÑO");
 		}else {
 			System.out.println("Valor no válido");
 		}
+		entrada.close();
 	}
 
 }
