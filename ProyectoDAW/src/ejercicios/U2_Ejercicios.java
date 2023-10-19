@@ -9,6 +9,7 @@ public class U2_Ejercicios {
 	//Ejercicio 3
 		System.out.println("Voy a aprender Java");
 		System.out.println("cueste lo que cueste.");
+	System.out.println("-------------------------");
 	//Ejercicio 4
 		//byte
 		//byte
@@ -67,29 +68,35 @@ public class U2_Ejercicios {
     	int n3=10;
 
     	suma = n1 + n2;
-    	System.out.println("La suma es: " + suma);
+    	System.out.print("La suma es " + suma);
     	suma = suma + n3;
-    	System.out.println(suma);
+    	System.out.println(" y la segunda suma es "+suma);
     //B)
 		n1=5;
 		n2=6;
     	suma=n1+n2;
 
-    	System.out.println("La suma es= "+suma);
+    	System.out.println("La suma es: "+suma);
     //C
 		int n=8;
     	int cuad=n*n;
 
     	System.out.println("El cuadrado de " +n+ " es: " + cuad);
+    System.out.println("-------------------------");
 	//Ejercicio 10
     	final byte n1Ej10=6;
     	final byte n2Ej10=9;
     	byte sumaEj10= n1Ej10+n2Ej10;
     	System.out.println(sumaEj10);
+    System.out.println("-------------------------");
     //Ejercicio 11
     	byte nota1=8;
     	byte nota2=5;
     	byte nota3=6;
+    	float promedio=((nota1+nota2+nota3)/3);
+    	System.out.println(promedio);
+    System.out.println("-------------------------");
+    	
     	
 		//21
 		double kmDay;
@@ -101,7 +108,7 @@ public class U2_Ejercicios {
 		Scanner entrada = new Scanner(System.in);
 		System.out.println("Introduzca los km totales recorridos en un día: ");
 		kmDay= entrada.nextDouble();
-		System.out.println("Introduzca el coste del litros de gasolina: ");
+		System.out.println("Introduzca el coste de un litro de gasolina: ");
 		priceLiter= entrada.nextDouble();
 		System.out.println("Introduzca el promedio de km/l: ");
 		kmLiter= entrada.nextDouble();
@@ -110,7 +117,7 @@ public class U2_Ejercicios {
 		System.out.println("Introduzca el coste por peajes diario: ");
 		peajeDay= entrada.nextDouble();
 		
-		double costeTotal=kmDay*kmLiter*priceLiter+parkTaxe+peajeDay;
+		double costeTotal=((kmDay/kmLiter)*priceLiter)+parkTaxe+peajeDay;
 		System.out.println("Un viaje diario cuesta:"+costeTotal);
 		entrada.close();
 		
