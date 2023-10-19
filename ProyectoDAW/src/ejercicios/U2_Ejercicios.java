@@ -10,16 +10,16 @@ public class U2_Ejercicios {
 		System.out.println("Voy a aprender Java");
 		System.out.println("cueste lo que cueste.");
 	//Ejercicio 4
-		byte hermanos=1;
-		byte notaFinal=5;
-		long pMundial= 788800000;
-		int provinciaEspaña=1000000;
-		byte pasajerosBus=64;
-		byte puntosGasol=53;
-		double priceChorizo= 2.50;
-		short mundialEspaña=2010;
-		byte cienPies=100;
-		double seatPanda=4.500;
+		//byte
+		//byte
+		//long
+		//int
+		//byte
+		//byte
+		//double
+		//short
+		//byte
+		//double
 	//Ejercicio 5
 		//a Si
 		//b No, no puede empezar por número.
@@ -41,14 +41,53 @@ public class U2_Ejercicios {
 		//h string
 		//i string
 	//Ejercicio 7
+		byte hermanos=1;
+		byte notaFinal=5;
+		long pMundial= 788800000;
+		int provinciaEspaña=1000000;
+		byte pasajerosBus=64;
+		byte puntosGasol=53;
+		double priceChorizo= 2.50;
+		short mundialEspaña=2010;
+		byte cienPies=100;
+		double seatPanda=4.500;
 	//Ejercicio 8
-		final byte  EOF= -1;
-		
-		
-		
-		
-		
-		//9
+		final byte EOF=-1;
+		final byte MAXIMO=99;
+		final byte CIERTO=1;
+		final byte FALSO=0;
+		final char ULTIMA_LETRA='z';
+		final float PI=3.14159F;
+		final String MENSAJE="Error en la entrada de datos";
+	//Ejercicio 9
+		//A)
+		int n1 = 50;
+		int n2 = 30;
+    	int suma = 0;
+    	int n3=10;
+
+    	suma = n1 + n2;
+    	System.out.println("La suma es: " + suma);
+    	suma = suma + n3;
+    	System.out.println(suma);
+    	//B)
+		n1=5;
+		n2=6;
+    	suma=n1+n2;
+
+    	System.out.println("La suma es= "+suma);
+    	//C
+		int n=8;
+    	int cuad=n*n;
+
+    	System.out.println("El cuadrado de " +n+ " es: " + cuad);
+		//Ejercicio 10
+    	final byte n1Ej10=6;
+    	final byte n2Ej10=9;
+    	byte sumaEj10= n1Ej10+n2Ej10;
+    	System.out.println(sumaEj10);
+    	
+    	
 		//21
 		double kmDay;
 		double priceLiter;
