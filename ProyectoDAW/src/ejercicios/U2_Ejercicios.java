@@ -60,7 +60,7 @@ public class U2_Ejercicios {
 		final float PI=3.14159F;
 		final String MENSAJE="Error en la entrada de datos";
 	//Ejercicio 9
-		//A)
+	//A)
 		int n1 = 50;
 		int n2 = 30;
     	int suma = 0;
@@ -70,23 +70,26 @@ public class U2_Ejercicios {
     	System.out.println("La suma es: " + suma);
     	suma = suma + n3;
     	System.out.println(suma);
-    	//B)
+    //B)
 		n1=5;
 		n2=6;
     	suma=n1+n2;
 
     	System.out.println("La suma es= "+suma);
-    	//C
+    //C
 		int n=8;
     	int cuad=n*n;
 
     	System.out.println("El cuadrado de " +n+ " es: " + cuad);
-		//Ejercicio 10
+	//Ejercicio 10
     	final byte n1Ej10=6;
     	final byte n2Ej10=9;
     	byte sumaEj10= n1Ej10+n2Ej10;
     	System.out.println(sumaEj10);
-    	
+    //Ejercicio 11
+    	byte nota1=8;
+    	byte nota2=5;
+    	byte nota3=6;
     	
 		//21
 		double kmDay;
