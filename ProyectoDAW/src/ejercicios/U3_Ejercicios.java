@@ -60,7 +60,7 @@ System.out.println("------------4------------");
 		}
 //Ejercicio 5
 System.out.println("------------5------------");
-		//pablo
+		//pablod
 		
 	
 //Ejercicio 27
