@@ -7,60 +7,61 @@ public class U3_Ejercicios {
 	public static void main(String[] args) {
 		
 //Ejecicio 1
-		int numEj1;
+		int num1;
 		
 System.out.println("------------1------------");
 		System.out.println("Introduzca un número:");
 		Scanner entrada = new Scanner(System.in);
-		numEj1=entrada.nextInt();
+		num1=entrada.nextInt();
 		
-		if(numEj1%2==0) {
+		if(num1%2==0) {
 			System.out.println("Es par");
 		}else {
 			System.out.println("Es impar");
 		}
 //Ejercico 2
-		int num1Ej2;
-		int num2Ej2;
+		int num2;
 		
 System.out.println("------------2------------");
 		System.out.println("Introduzca un número");
-		num1Ej2=entrada.nextInt();
+		num1=entrada.nextInt();
 		System.out.println("Introduzca otro número");
-		num2Ej2=entrada.nextInt();
-		if(num1Ej2<num2Ej2) {
-			System.out.println(num2Ej2+", "+num1Ej2);
+		num2=entrada.nextInt();
+		if(num1<num2) {
+			System.out.println(num2+", "+num1);
 		}else {
-			System.out.println(num1Ej2+", "+num2Ej2);
+			System.out.println(num1+", "+num2);
 		}
 		
 //Ejercicio 3
-		int num1Ej3;
-		int num2Ej3;
 		
 System.out.println("------------3------------");
 		System.out.println("Introduzca un número");
-		num1Ej3=entrada.nextInt();
+		num1=entrada.nextInt();
 		System.out.println("Introduzca un número");
-		num2Ej3=entrada.nextInt();
-		if(num1Ej3>num2Ej3) {
-			System.out.println(num1Ej3+" es mayor");
+		num2=entrada.nextInt();
+		if(num1>num2) {
+			System.out.println(num1+" es mayor");
 		}else {
-			System.out.println(num2Ej3+" es mayor");
+			System.out.println(num2+" es mayor");
 		}
 //Ejercicio 4
-		System.out.println("------------4------------");
+System.out.println("------------4------------");
 		System.out.println("Introduzca un número");
-		num1Ej3=entrada.nextInt();
+		num1=entrada.nextInt();
 		System.out.println("Introduzca un número");
-		num2Ej3=entrada.nextInt();
-		if(num1Ej3>num2Ej3) {
-			System.out.println(num1Ej3+" es mayor");
-		}if(num2Ej3>num1Ej3) {
-			System.out.println(num2Ej3+" es mayor");
+		num2=entrada.nextInt();
+		if(num1>num2) {
+			System.out.println(num1+" es mayor");
+		}if(num2>num1) {
+			System.out.println(num2+" es mayor");
 		}else {
 			System.out.println("Los dos números son iguales");
 		}
+//Ejercicio 5
+System.out.println("------------5------------");
+		
+		
 	
 //Ejercicio 27
 		int cantidad;
