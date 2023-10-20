@@ -17,6 +17,18 @@ public class U3_Ejercicios {
 		}else {
 			System.out.println("Es impar");
 		}
+		entrada.close();
+		
+	
+//Ejercicio 27
+		int cantidad;
+		int numBilletes500;
+		System.out.println("Introduzca la cantidad(múltiplo de 5):");
+		cantidad=entrada.nextInt();
+		if(cantidad>=500) {
+			numBilletes500 = cantidad/500;
+			cantidad = cantidad%500;
+		}
 		
 		
 	}
