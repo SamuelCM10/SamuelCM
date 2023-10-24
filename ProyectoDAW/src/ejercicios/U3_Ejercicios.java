@@ -60,9 +60,29 @@ System.out.println("------------4------------");
 		}
 //Ejercicio 5
 System.out.println("------------5------------");
-		//pablod
+
+		System.out.println("Introduzca un numero:");
+		num1=entrada.nextInt();
+		System.out.println("Introduzca otro:");
+		num2=entrada.nextInt();
+		int suma=num1+num2;
+		int producto=num1*num2;
 		
-	
+		
+		if(num1>num2) {
+			System.out.print("La suma es: "+suma);
+			System.out.print(" porque "+num1);
+			System.out.println(" es mayor.");
+		}else {
+			System.out.print("El producto es: "+producto);
+			System.out.print(" porque "+num2);
+			System.out.println(" es mayor.");
+		}
+//Ejercicio 6
+System.out.println("------------6------------");
+		System.out.println("Introduce un número entre el 1 y el 99:");
+		num1=entrada.nextInt();
+		
 //Ejercicio 27
 		int cantidad;
 		int numBilletes500;
