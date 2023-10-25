@@ -10,6 +10,7 @@ public class U3_Ejercicios {
 		int num1;
 		
 System.out.println("------------1------------");
+
 		System.out.println("Introduzca un número:");
 		Scanner entrada = new Scanner(System.in);
 		num1=entrada.nextInt();
@@ -23,6 +24,7 @@ System.out.println("------------1------------");
 		int num2;
 		
 System.out.println("------------2------------");
+
 		System.out.println("Introduzca un número");
 		num1=entrada.nextInt();
 		System.out.println("Introduzca otro número");
@@ -34,8 +36,8 @@ System.out.println("------------2------------");
 		}
 		
 //Ejercicio 3
-		
 System.out.println("------------3------------");
+
 		System.out.println("Introduzca un número");
 		num1=entrada.nextInt();
 		System.out.println("Introduzca un número");
@@ -47,6 +49,7 @@ System.out.println("------------3------------");
 		}
 //Ejercicio 4
 System.out.println("------------4------------");
+
 		System.out.println("Introduzca un número");
 		num1=entrada.nextInt();
 		System.out.println("Introduzca un número");
@@ -80,9 +83,38 @@ System.out.println("------------5------------");
 		}
 //Ejercicio 6
 System.out.println("------------6------------");
+
 		System.out.println("Introduce un número entre el 1 y el 99:");
 		num1=entrada.nextInt();
-		
+		if(num1<10) {
+			System.out.println("El número es de 1 dígito");
+		}else if(num1>=10&&num1<=99) {
+			System.out.println("El número es de 2 dígitos");
+		}else if(num1>99) {
+			System.out.println("El número es de más de dos dígitos");
+		}
+//Ejercicio 7 
+System.out.println("------------7------------");	
+
+	System.out.println("Introduce un número entre el 0 y el 99999:");
+	num1=entrada.nextInt();
+	if(num1<10&&num1>=0) {
+		System.out.println("El número es de 1 dígito");
+	}else if(num1>=10&&num1<=99) {
+		System.out.println("El número es de 2 dígitos");
+	}else if(num1>=100&&num1<=999) {
+		System.out.println("El número es de 3 dígitos");
+	}else if(num1>=1000&&num1<=9999) {
+		System.out.println("El número es de 4 dígitos");
+	}else if(num1>=10000&&num1<=99999) {
+		System.out.println("El número es de 5 dígitos");
+	}else if(num1>99999) {
+		System.out.println("El número es de más de cinco dígitos");
+	}else if(num1<0) {
+		System.out.println("El número es negativo");
+	}
+//Ejercicio 8a	
+System.out.println("------------8------------");	
 //Ejercicio 27
 		int cantidad;
 		int numBilletes500;
