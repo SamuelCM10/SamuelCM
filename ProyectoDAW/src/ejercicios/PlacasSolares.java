@@ -34,8 +34,12 @@ public class PlacasSolares {
 			System.out.println("Introduzca la Generación Diaria:");
 			gd=entrada.nextDouble();
 		}if(option==2) {
+			//if(id=0) {
+				System.out.println("No hay datos");
+			}
 			
-		}
+		
+			
 	}while(option!=5);
 
 	}
