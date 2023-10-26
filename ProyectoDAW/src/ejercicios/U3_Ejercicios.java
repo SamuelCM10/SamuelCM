@@ -113,8 +113,17 @@ System.out.println("------------7------------");
 	}else if(num1<0) {
 		System.out.println("El número es negativo");
 	}
-//Ejercicio 8a	
-System.out.println("------------8------------");	
+//Ejercicio 8
+System.out.println("------------8------------");
+	System.out.println("Introduca el número capicúa:");
+	num1=entrada.nextInt();
+	if(num1>99999||num1<0) {
+		System.out.println("Número no valido.");
+	}else {
+		do {
+			
+		}while
+	}
 //Ejercicio 27
 		int cantidad;
 		int numBilletes500;
