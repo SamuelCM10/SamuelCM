@@ -19,7 +19,7 @@ public class QueHayQueSepararlos {
 			sueldo=40*12.5+(numHoras-40)*25;
 		}else {
 			sueldo=40*12.5+8*12.5+(numHoras-48)*37.5;
-		}
+		}entrada.close();
 	}
 
 }
