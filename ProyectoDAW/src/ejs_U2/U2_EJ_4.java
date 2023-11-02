@@ -1,4 +1,4 @@
-package ejercicios;
+package ejs_U2;
 
 public class U2_EJ_4 {
 

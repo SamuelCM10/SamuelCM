@@ -1,4 +1,4 @@
-package ejemplos;
+package unidad_1_2;
 
 public class Literal {
 
