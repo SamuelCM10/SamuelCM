@@ -119,11 +119,11 @@ System.out.println("------------8------------");
 	num1=entrada.nextInt();
 	if(num1>99999||num1<0) {
 		System.out.println("Número no valido.");
-	}else {
+	/*}else {
 		do {
 			
 		}while
-	}
+	*/}
 //Ejercicio 27
 		int cantidad;
 		int numBilletes500;
