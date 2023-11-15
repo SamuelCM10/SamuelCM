@@ -17,7 +17,7 @@ public class ControlVendimia {
 		zonas[4]=0;
 		zonas[5]=0;
 		
-		int kg_T=zonas[0]+zonas[1]+zonas[2]+zonas[3]+zonas[4]+zonas[5];
+		int kg_T=0;
 		
 		int option;
 		int zona;
@@ -74,6 +74,7 @@ public class ControlVendimia {
 			
 			
 		}if(option==2) {
+			kg_T=zonas[0]+zonas[1]+zonas[2]+zonas[3]+zonas[4]+zonas[5];
 			System.out.println("Los kilogramos de todas las zonas son: "+kg_T+"kg");
 			}
 		if(option==3) {
@@ -118,7 +119,7 @@ public class ControlVendimia {
 				}while(zona!=7);
 		}
 		if(option==4) {
-			double media=kg_T/5;
+			double media=kg_T/6;
 			System.out.println("La media de peso de todas las parcelas es de: "+media+"kg");
 		}
 	}while(option!=5);
