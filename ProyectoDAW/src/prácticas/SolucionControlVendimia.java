@@ -1,4 +1,4 @@
-package unidad5;
+package prácticas;
 
 import java.util.Scanner;
 
