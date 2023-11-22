@@ -11,46 +11,50 @@ public class U4_Ej_10 {
 	public static int h2;
 	public static int m2;
 	public static int s2;
+	public static String t1;
+	public static String t2;
 	
 	public static void main(String[] args) {
 	
 	pedirTiempo1();
 	pedirTiempo2();
-	compararTiempos(pedirTiempo1(), pedirTiempo2());
+	compararTiempos();
 	
 	}
 	private static String pedirTiempo1() {
-		String t1;
-	
-		System.out.println("Introduzca las horas:");
+		
+		System.out.println("Introduzca las horas del primer tiempo:");
 		h1=entrada.nextInt();
-		System.out.println("Introduzca los minutos:");
+		System.out.println("Introduzca los minutos del primer tiempo:");
 		m1=entrada.nextInt();
-		System.out.println("Introduzca los segundos:");
+		System.out.println("Introduzca los segundos del primer tiempo:");
 		s1=entrada.nextInt();
 	
-		t1=h1+"'"+m1+"''"+s1;
-		System.out.println(t1);
+		t1=h1+"'"+m1+"'"+s1;
+		System.out.println("Primer tiempo: "+t1);
 		return t1;
  }
 	private static String pedirTiempo2() {
-		String t2;
 		
-		System.out.println("Introduzca las horas:");
+		System.out.println("Introduzca las horas del segundo tiempo:");
 		h2=entrada.nextInt();
-		System.out.println("Introduzca los minutos:");
+		System.out.println("Introduzca los minutos del segundo tiempo:");
 		m2=entrada.nextInt();
-		System.out.println("Introduzca los segundos:");
+		System.out.println("Introduzca los segundos del segundo tiempo:");
 		s2=entrada.nextInt();
 		
-		t2=h2+"'"+m2+"''"+s2;
-		System.out.println(t2);
+		t2=h2+"'"+m2+"'"+s2;
+		System.out.println("Segundo tiempo: "+t2);
 		return t2;
 	}
-	private static String compararTiempos(String t1, String t2) {
-		if(h1<=h2&&m1<=m2&&s1<s2) {
-			System.out.println(t1);
-			return t1;
+	private static void compararTiempos() {
+		if((h1<=h2&&m1<=m2&&s1<s2)||(h1<=h2&&m1<m2)||(h1<h2)) {
+			System.out.println("--------------------");
+			System.out.println("1er tiempo: "+t1);
+		}else {
+			System.out.println("--------------------");
+			System.out.println("1er tiempo: "+t2);
+
 		}
 	}
 }
