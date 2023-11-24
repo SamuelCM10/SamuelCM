@@ -1,8 +1,8 @@
-package prácticas;
+package unidad5.practica1_U5;
 
 import java.util.Scanner;
 
-public class PlacasSolaresSocorro {
+public class PlacasSolares {
 
 	public static int id;
 	public static double gd;
