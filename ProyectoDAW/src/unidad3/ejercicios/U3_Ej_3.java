@@ -1,8 +1,8 @@
-package ejs_U3;
+package unidad3.ejercicios;
 
 import java.util.Scanner;
 
-public class U3_Ej_4 {
+public class U3_Ej_3 {
 
 	public static void main(String[] args) {
 		
@@ -16,10 +16,8 @@ public class U3_Ej_4 {
 		num2=entrada.nextInt();
 		if(num1>num2) {
 			System.out.println(num1+" es mayor");
-		}if(num2>num1) {
-			System.out.println(num2+" es mayor");
 		}else {
-			System.out.println("Los dos números son iguales");
+			System.out.println(num2+" es mayor");
 		}entrada.close();
 	}
 }

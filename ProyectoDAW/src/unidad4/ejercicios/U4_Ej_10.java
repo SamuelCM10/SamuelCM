@@ -1,4 +1,4 @@
-package ejs_U4;
+package unidad4.ejercicios;
 
 import java.util.Scanner;
 

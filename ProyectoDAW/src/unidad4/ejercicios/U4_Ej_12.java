@@ -1,4 +1,4 @@
-package ejs_U4;
+package unidad4.ejercicios;
 
 public class U4_Ej_12 {
 

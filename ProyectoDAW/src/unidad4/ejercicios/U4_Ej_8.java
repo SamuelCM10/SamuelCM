@@ -1,23 +1,23 @@
-package ejs_U4;
+package unidad4.ejercicios;
 
 import java.util.Scanner;
 
-public class U4_Ej_9 {
+public class U4_Ej_8 {
 
 	static Scanner entrada = new Scanner(System.in);
-	public static int num;
+	public static double num;
 	
 	public static void main(String[] args) {
 	
 	System.out.println("Introduzca un número:");
-	num=entrada.nextInt();	
-	cuadrado(num);
+	num=entrada.nextDouble();	
+	diezVeces(num);
 	
 
 	}
- private static double cuadrado(int num) {
+ private static double diezVeces(double num) {
 	
-	num=num*num;
+	num=num*10;
 	System.out.println(num);
 	return num;
 	}
