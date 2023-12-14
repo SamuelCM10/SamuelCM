@@ -14,14 +14,12 @@ public static int[]boleto=new int[NUM_CASILLAS];
 
 	public static void main(String[] args) {
 		
-	int aciertos=0;
-	double recaudacion=0;	
 		comprarBoleto();
 		//comprarBoleto() sirve para establecer la combinación de mi boleto
-		comprobarBoleto(aciertos);
+		int aciertos=comprobarBoleto();
 		//comprobarBoleto() compara mi boleto con la combinación ganadora
 		//También me da el número de aciertos y los números acertados
-		pedirRecaudacion();
+		double recaudacion=pedirRecaudacion();
 		//pedirRecaudacion() pide la cantidad que se ha recaudado para el sorteo
 		premio(aciertos, recaudacion);
 		//premio() da el resultado del sorteo en función del boleto que tengas
@@ -34,8 +32,8 @@ public static int[]boleto=new int[NUM_CASILLAS];
 			boleto[casilla]=numero;
 		}
 	}
-	private static int comprobarBoleto(int aciertos) {
-		
+	private static int comprobarBoleto() {
+		int aciertos=0;
 		for(int casilla=0;casilla<NUM_CASILLAS;casilla++) {
 			if(boleto[casilla]==primitiva[casilla]) {
 				aciertos++;
@@ -50,8 +48,9 @@ public static int[]boleto=new int[NUM_CASILLAS];
 		return aciertos;
 	}
 	private static double pedirRecaudacion() {
+		double recaudacion=0;
 		System.out.println("Introduzca la recaudación del sorteo:");
-		double recaudacion=entrada.nextDouble();
+		recaudacion=entrada.nextDouble();
 	
 		return recaudacion;
 	}
@@ -60,16 +59,16 @@ public static int[]boleto=new int[NUM_CASILLAS];
 		double dedicadoPremios=(recaudacion*55)/100;
 		if(aciertos<2) {
 			System.out.println("Prueba otro año.");
-		}if(aciertos==3) {
+		}else if(aciertos==3) {
 			resultado=(dedicadoPremios*5)/100;
 			System.out.println("Ha ganado: "+resultado+"€");
-		}if(aciertos==4) {
+		}else if(aciertos==4) {
 			resultado=(dedicadoPremios*15)/100;
 			System.out.println("Ha ganado: "+resultado+"€");
-		}if(aciertos==5) {
+		}else if(aciertos==5) {
 			resultado=(dedicadoPremios*25)/100;
 			System.out.println("Ha ganado: "+resultado+"€");
-		}if(aciertos==6) {
+		}else if(aciertos==6) {
 			resultado=(dedicadoPremios*50)/100;
 			System.out.println("Ha ganado: "+resultado+"€");
 		}
