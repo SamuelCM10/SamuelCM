@@ -25,7 +25,7 @@ private static void inicializarEstanterias() {
 		ESTANTERIA_N1[i]="N"+num++;
 	}
 	for(int i=0;i<ESTANTERIA_N2.length;i++) {
-		ESTANTERIA_N1[i]="N"+num++;
+		ESTANTERIA_N1[i]="N"+num+;
 	}
 	
 }
