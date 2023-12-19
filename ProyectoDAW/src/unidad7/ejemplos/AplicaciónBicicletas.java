@@ -4,13 +4,13 @@ public class AplicaciónBicicletas {
 
 	public static void main(String[] args) {
 		
-		Bicicleta bici = new Bicicleta(1,2,"Orbea","X34","ROJO");
-		Bicicleta bici2 = new Bicicleta(2,4,"BH","XTREME","NEGRO");
+		Bicicleta bici = new Bicicleta(1,2,"ROJO","X34","Orbea");
+		Bicicleta bici2 = new Bicicleta(2,4,"NEGRO","XTREME","BH");
 		
 		bici.imprimirDatos();
 		
-		bici.setMarca("Orbea");
-		bici.imprimirDatos();
+		bici2.setMarca("Orbea");
+		//Esto es otra forma de definir el valor Marca.
 
 	}
 
