@@ -2,13 +2,45 @@ package unidad7.ejemplos;
 
 public class Coche {
 
-	private String marca="Sin marca";
-	private String modelo="Sin modelo";
-	private String color="No definido";
-	private String matrícula="Sin matricular";
-	private int id=0;
-	private double km=0;
-	private double peso=0;
+	private String bastidor;
+	private String marca;
+	private String modelo;
+	private int anioModelo;
+	private int numPuertas;
+	private String color;
+	private String tipo_motor;
+	private int cc;
+	private int potencia;
+	private double peso;
+	private char emisiones;
+	private double precio;
+	
+	public Coche() {
+		bastidor="Sin bastidor";
+		marca="Sin marca";
+		modelo="Sin modelo";
+	}
+	public Coche(String bastidor,String marca,String modelo,int anioModelo,String color) {
+		this.bastidor=bastidor;
+		this.bastidor=marca;
+		this.bastidor=modelo;
+		this.anioModelo=anioModelo;
+		this.color=color;
+	}
+	public String toString() {
+		String informacion = "";
+		informacion="-----Información coche-----\n";
+		informacion="Bastidor: "+bastidor+"\n";
+		informacion="Marca: "+marca+"\n";
+		informacion="Modelo: "+modelo+"\n";
+		return informacion;
+	}
+	public void setBastidor(String bastidor) {
+		this.bastidor= bastidor;
+	}
+	public String getBastidor() {
+		return bastidor;
+	}
 	public String getMarca() {
 		return marca;
 	}
@@ -21,29 +53,41 @@ public class Coche {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
+	public int getAnioModelo() {
+		return anioModelo;
+	}
+	public void setAnioModelo(int anioModelo) {
+		this.anioModelo = anioModelo;
+	}
+	public int getNumPuertas() {
+		return numPuertas;
+	}
+	public void setNumPuertas(int numPuertas) {
+		this.numPuertas = numPuertas;
+	}
 	public String getColor() {
 		return color;
 	}
 	public void setColor(String color) {
 		this.color = color;
 	}
-	public String getMatrícula() {
-		return matrícula;
+	public String getTipo_motor() {
+		return tipo_motor;
 	}
-	public void setMatrícula(String matrícula) {
-		this.matrícula = matrícula;
+	public void setTipo_motor(String tipo_motor) {
+		this.tipo_motor = tipo_motor;
 	}
-	public int getId() {
-		return id;
+	public int getCc() {
+		return cc;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setCc(int cc) {
+		this.cc = cc;
 	}
-	public double getKm() {
-		return km;
+	public int getPotencia() {
+		return potencia;
 	}
-	public void setKm(double km) {
-		this.km = km;
+	public void setPotencia(int potencia) {
+		this.potencia = potencia;
 	}
 	public double getPeso() {
 		return peso;
@@ -51,22 +95,17 @@ public class Coche {
 	public void setPeso(double peso) {
 		this.peso = peso;
 	}
-	public void Coche() {
-		this.marca="marca";
-		this.modelo="modelo";
-		this.color="color";
-		this.matrícula="matrícula";
-		this.id=0;
-		this.km=0;
-		this.peso=0;
+	public char getEmisiones() {
+		return emisiones;
 	}
-	public void imprimirCoche() {
-		System.out.println("-----DATOS----");
-		System.out.println("Marca: "+marca);
-		System.out.println("Modelo: "+modelo);
-		System.out.println("Color: "+color);
-		System.out.println("Matrícula: "+matrícula);
-		System.out.println("Id: "+id);
-		System.out.println("Peso: "+peso);
+	public void setEmisiones(char emisiones) {
+		this.emisiones = emisiones;
 	}
+	public double getPrecio() {
+		return precio;
+	}
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+	
 }
