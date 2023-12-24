@@ -9,7 +9,7 @@ public class AplicaciónBicicletas {
 		
 		bici.imprimirDatos();
 		
-		bici2.setMarca("Orbea");
+		bici2.setMarca("Orbeaa");
 		//Esto es otra forma de definir el valor Marca.
 
 	}
