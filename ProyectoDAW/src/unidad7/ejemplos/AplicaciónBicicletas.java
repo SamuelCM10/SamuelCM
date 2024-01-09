@@ -4,7 +4,7 @@ public class AplicaciónBicicletas {
 
 	public static void main(String[] args) {
 		
-		Bicicleta bici = new Bicicleta(1,2,"RO0JO","X34","Orbea");
+		Bicicleta bici = new Bicicleta(1,2,"ROJO","X34","Orbea");
 		Bicicleta bici2 = new Bicicleta(2,4,"NEGRO","XTREME","BH");
 		
 		bici.imprimirDatos();
