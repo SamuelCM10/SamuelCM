@@ -6,19 +6,10 @@ public class GeneradorAleatorio {
 
 	public static void main(String[] args) {
 
-		Random random = new Random();
-		//Generar un número entero aleatorio
-		int numAleatorio = random.nextInt();
-		System.out.println(numAleatorio);
-		
-		//Generar un número entero aleatorio 0-100
-		int numAleatorio2 = random.nextInt(100+1);
-		System.out.println(numAleatorio2);
-		
-		//Generar un número entero aleatorio 0-100
-		double numAleatorio3 = random.nextInt(100+1);
-		System.out.println(numAleatorio3);
-		
-	}
+		Random aleatorio = new Random(System.currentTimeMillis());
+		int numero = aleatorio.nextInt(10000);
+			
+		System.out.println("Numero:"+numero);
+		}
 
-}
+	}
