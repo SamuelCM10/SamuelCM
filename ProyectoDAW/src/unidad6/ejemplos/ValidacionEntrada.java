@@ -14,6 +14,7 @@ public class ValidacionEntrada {
 
 	// valida la dirección
 	// \\s+: Coincide con uno o más espacios en blanco.
+	// \\d+: Coincide con uno o más números.
 	// ([a-zA-Z]+|[a-zA-Z]+\\s[a-zA-Z]+\\d+)
 	public static boolean validarDireccion(String direccion) {
 		return direccion.matches("\\s+([a-zA-Z]+|[a-zA-Z]+\\s[a-zA-Z]+ \\d+)");
@@ -35,6 +36,6 @@ public class ValidacionEntrada {
 
 	// valida el teléfono
 	public static boolean validarTelefono(String telefono) {
-		return telefono.matches("[1-9]\\d{2}-[1-9]\\d{2}-\\d{4}");
+		return telefono.matches("[1-9]\\d{3}-[0-9]\\d{3}-\\d{3}-[0-9]\\d{3}");
 	} 
 } // fin de la clase ValidacionEntrada
