@@ -21,7 +21,7 @@ public class Validacion {
 		System.out.println("Escriba el telefono:");
 		String telefono = scanner.nextLine();
 
-		// valida la entrada del usuario y muestra mensaje de errorr
+		// valida la entrada del usuario y muestra mensaje de error
 		System.out.println("\nValidar resultado:");
 
 		if (!ValidacionEntrada.validarPrimerNombre(primerNombre))
