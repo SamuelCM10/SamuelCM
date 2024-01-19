@@ -1,4 +1,4 @@
-package unidad7.ejemplos;
+package unidad7.ejemplos.tareas;
 
 import java.util.Scanner;
 
