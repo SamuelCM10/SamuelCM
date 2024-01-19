@@ -1,0 +1,20 @@
+package unidad6.ejemplos.enumerados;
+
+public enum PaloNaipes {
+
+	PALO_PICAS("Picas"),
+	PALO_CORAZONES("Corazones"),
+	PALO_TREBOLES("Tréboles"),
+	PALO_DIAMANTES("Diamantes");
+	
+	private final String nombre;
+	
+	private PaloNaipes(String nombre) {
+		this.nombre=nombre;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+	
+}

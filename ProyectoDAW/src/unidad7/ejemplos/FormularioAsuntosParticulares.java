@@ -2,7 +2,7 @@ package unidad7.ejemplos;
 
 import java.util.Scanner;
 
-public class SolicitudDePermisosPorAsuntosParticulares {
+public class FormularioAsuntosParticulares {
 
 	public static Scanner entrada = new Scanner(System.in);
 	
@@ -34,7 +34,7 @@ public static void ponerFecha(){
 	Boolean resultadoHora;
 	do {
 	String hora = entrada.next();
-	String formatoHora = "\\d{0,1}\\d{0,9}:\\d{0,5}\\d{0,9}";
+	String formatoHora = "\\d[0,1]\\d[0,9]:\\d[0,5]\\d[0,9]";
 	resultadoHora = hora.matches(formatoHora);
 		
 	if(resultadoHora) {
