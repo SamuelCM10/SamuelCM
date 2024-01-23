@@ -16,7 +16,7 @@ public static void ponerFecha(){
 	
 	System.out.println("Registro de entrada");
 	//Fecha
-	System.out.println("Fecha:");
+	System.out.println("Fecha(dd/MM/yyyy):");
 	Boolean resultadoFecha;
 	do {
 	String fecha = entrada.next();
@@ -26,15 +26,15 @@ public static void ponerFecha(){
 	if(resultadoFecha) {
 		System.out.println("");
 	}else {
-		System.out.println("Introduzca una fecha válida (dd/MM/yyyy)");
+		System.out.println("Introduzca una fecha válida (dd/mm/yyyy)");
 	}
 		}while (!resultadoFecha);
 	//Hora
-	System.out.println("Hora:");
+	System.out.println("Hora(hh:mm):");
 	Boolean resultadoHora;
 	do {
 	String hora = entrada.next();
-	String formatoHora = "^(1[0-2]|0[1-9]):[0-5][0-9]$";
+	String formatoHora = "^(0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$";
 	resultadoHora = hora.matches(formatoHora);
 		
 	if(resultadoHora) {
