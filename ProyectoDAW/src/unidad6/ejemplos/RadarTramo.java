@@ -10,19 +10,20 @@ public class RadarTramo {
 	public static void main(String[] args) {
 
 		double distancia = entrada.nextDouble();
-		double vmp = entrada.nextDouble();//velocidad maxima permitida
+		double vel_maxima_permitida = entrada.nextDouble();//velocidad maxima permitida
 		double tiempo = entrada.nextDouble();
-		double vel_media = entrada.nextDouble();
+		double vel_media = 0;
 		boolean saPasao;
 		double saPasaoX20;
 
-		if(distancia<0 || vmp<0 || tiempo<=0 ) {
+		if(distancia<0 || vel_maxima_permitida<0 || tiempo<=0 ) {
 			System.out.println("***ERR0R***");
 		}else {
-			vmp = vmp/3.6;
+			vel_maxima_permitida = vel_maxima_permitida/3.6;// m/s
 			vel_media = distancia/tiempo;
-			saPasao = vel_media>vmp;
-			saPasaoX20 = ((vel_media-vmp)/vmp)/100;
+			//Calcular la velocidad media
+			saPasao = vel_media>vel_maxima_permitida;
+			saPasaoX20 = ((vel_media-vel_maxima_permitida)/vel_maxima_permitida)/100;
 			
 			if(!saPasao) {
 				System.out.println("Circule");

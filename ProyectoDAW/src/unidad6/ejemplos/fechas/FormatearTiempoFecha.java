@@ -1,4 +1,4 @@
-package unidad6.ejemplos;
+package unidad6.ejemplos.fechas;
 
 import java.util.Calendar;
 import java.util.Formatter;

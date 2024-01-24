@@ -1,4 +1,4 @@
-package unidad6.ejemplos;
+package unidad6.ejemplos.cadenas;
 
 public class ValidacionEntrada {
 	// valida el primer nombre

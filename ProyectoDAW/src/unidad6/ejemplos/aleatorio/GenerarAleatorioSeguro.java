@@ -1,4 +1,4 @@
-package unidad6.ejemplos;
+package unidad6.ejemplos.aleatorio;
 
 import java.security.SecureRandom;
 

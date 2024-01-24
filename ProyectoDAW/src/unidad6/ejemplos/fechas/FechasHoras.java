@@ -1,4 +1,4 @@
-package unidad6.ejemplos;
+package unidad6.ejemplos.fechas;
 
 import java.time.Duration;
 import java.time.LocalDate;

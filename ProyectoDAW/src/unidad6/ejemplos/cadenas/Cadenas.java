@@ -1,4 +1,4 @@
-package unidad6.ejemplos;
+package unidad6.ejemplos.cadenas;
 
 import javax.swing.plaf.synth.SynthScrollBarUI;
 
