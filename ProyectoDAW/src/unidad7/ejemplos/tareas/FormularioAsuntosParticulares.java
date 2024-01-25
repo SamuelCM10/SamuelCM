@@ -1,5 +1,7 @@
 package unidad7.ejemplos.tareas;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class FormularioAsuntosParticulares {
@@ -19,9 +21,8 @@ public static void ponerFecha(){
 	System.out.println("Fecha(dd/MM/yyyy):");
 	Boolean resultadoFecha;
 	do {
-	String fecha = entrada.next();
-	String formatoFecha = "\\d{2}/\\d{2}/\\d{4}";
-	resultadoFecha = fecha.matches(formatoFecha);
+	String fechaString = entrada.next();
+	resultadoFecha = validarFecha(fechaString);
 	
 	if(resultadoFecha) {
 		System.out.println("");
@@ -44,4 +45,20 @@ public static void ponerFecha(){
 	}
 		}while (!resultadoHora);
 	}
+	
+public static boolean validarFecha(String fechaString) {
+	
+	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+	
+	if (fechaString.matches("\\d{2}/\\d{2}/\\d{4}")) {
+		
+		LocalDate fecha = LocalDate.parse(fechaString, formatter);
+		
+		return true;
+		} else {
+			
+		return false;
+        }
+	}
 }
+
