@@ -1,5 +1,6 @@
 package unidad7.ejemplos.Almazara;
 
+import java.text.DecimalFormat;
 
 public class ProcesoAlmazara {
 
@@ -8,6 +9,7 @@ public class ProcesoAlmazara {
 	private double pesoMolturado;
 	private double aceiteExtraido;
 	private double aceiteFiltrado;
+	private Clientes cliente;
 	
 	public ProcesoAlmazara() {
 		
@@ -16,33 +18,32 @@ public class ProcesoAlmazara {
 		
 		double porcentajeLimpieza = Simulador.aplicarPorcentaje
 				(Cantidades.CANTIDAD_MIN_LIMPIEZA, Cantidades.CANTIDAD_MAX_LIMPIEZA);
-		
 		pesoLimpio = Simulador.aplicarPorcentaje(pesoAceitunas, porcentajeLimpieza);
 		
-		double porcentajeMolturacion = Simulador.aplicarPorcentaje
-				(Cantidades.CANTIDAD_MIN_MOLTURACION, Cantidades.CANTIDAD_MIN_MOLTURACION);
+		double porcentajeMolturacion = Simulador.generarPorcentajeAleatorio
+				(Cantidades.CANTIDAD_MIN_MOLTURACION, Cantidades.CANTIDAD_MAX_MOLTURACION);
+		pesoMolturado = Simulador.aplicarPorcentaje(pesoLimpio, porcentajeMolturacion);
 		
-		pesoMolturado = Simulador.aplicarPorcentaje(pesoAceitunas, porcentajeMolturacion);
-		
-		double porcentajeExtraccion = Simulador.aplicarPorcentaje
+		double porcentajeExtraccion = Simulador.generarPorcentajeAleatorio
 				(Cantidades.CANTIDAD_MIN_EXTRACCION, Cantidades.CANTIDAD_MAX_EXTRACCION);
+		aceiteExtraido = Simulador.aplicarPorcentaje(pesoMolturado, porcentajeExtraccion);
 		
-		aceiteExtraido = Simulador.aplicarPorcentaje(pesoAceitunas, porcentajeExtraccion);
-		
-		double porcentajeFiltrado = Simulador.aplicarPorcentaje
+		double porcentajeFiltrado = Simulador.generarPorcentajeAleatorio
 				(Cantidades.CANTIDAD_MIN_FILTRADO, Cantidades.CANTIDAD_MAX_FILTRADO);
-		
-		aceiteFiltrado = Simulador.aplicarPorcentaje(pesoAceitunas, porcentajeFiltrado);
+		aceiteFiltrado = Simulador.aplicarPorcentaje(aceiteExtraido, porcentajeFiltrado);
 		
 	}
-	public static void mostrarDatos(){
-	System.out.println("Peso inicial de aceitunas: " +   formato.format(pesoAceitunas)  + " kg");
-    System.out.println("Peso después de la limpieza: " + formato.format(pesoLimpio) + " kg");
-    System.out.println("Peso después de la molturación: " + formato.format(pesoMolturado) + " kg");
-    System.out.println("Aceite extraído: " + formato.format(aceiteExtraido) + " litros");
-    System.out.println("Aceite después de la filtración: " + formato.format(aceiteFiltrado) + " litros");
-	}
-	
+	public void mostrarDatos() {
+		
+		DecimalFormat formato = new DecimalFormat("0.00");
+     
+		System.out.println("Peso inicial de aceitunas: " +   formato.format(pesoAceitunas)  + " kg");
+		System.out.println("Peso después de la limpieza: " + formato.format(pesoLimpio) + " kg");
+		System.out.println("Peso después de la molturación: " + formato.format(pesoMolturado) + " kg");
+		System.out.println("Aceite extraído: " + formato.format(aceiteExtraido) + " litros");
+		System.out.println("Aceite después de la filtración: " + formato.format(aceiteFiltrado) + " litros");
+}
+
 	public double getPesoAceitunas() {
 		return pesoAceitunas;
 	}

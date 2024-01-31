@@ -8,8 +8,8 @@ public class Cantidades {
 	public static final double CANTIDAD_MAX_LIMPIEZA=0.95; //Kg
 	public static final double CANTIDAD_MIN_MOLTURACION=0.9; //Kg
 	public static final double CANTIDAD_MAX_MOLTURACION=0.95; //Kg
-	public static final double CANTIDAD_MIN_EXTRACCION=0.9; //Kg
-	public static final double CANTIDAD_MAX_EXTRACCION=0.95; //Kg
-	public static final double CANTIDAD_MIN_FILTRADO=0.9; //Kg
-	public static final double CANTIDAD_MAX_FILTRADO=0.95; //Kg
+	public static final double CANTIDAD_MIN_EXTRACCION=0.15; //l
+	public static final double CANTIDAD_MAX_EXTRACCION=0.25;; //l
+	public static final double CANTIDAD_MIN_FILTRADO=0.95; //l
+	public static final double CANTIDAD_MAX_FILTRADO=0.98; //l
 }
