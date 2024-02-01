@@ -1,13 +1,13 @@
 package unidad7.ejemplos.Almazara;
 
-
 public class ProgramaAlmazara {
 
-	public static void main(String[] args) {
+	public static final int NUM_PROCESOS = 10;
+	
+	public static void main(String[] args) throws InterruptedException  {
 		
-		ProcesoAlmazara procesoAlmazara = new ProcesoAlmazara(10);
 		
-		ProcesoAlmazara[] procesosAlmazara = new ProcesoAlmazara[10];
+		ProcesoAlmazara[] procesosAlmazara = new ProcesoAlmazara[NUM_PROCESOS];
 		
 		for(int i=0;i<10;i++) {
 			procesosAlmazara [i] = new ProcesoAlmazara();
@@ -20,7 +20,6 @@ public class ProgramaAlmazara {
 			Thread.sleep(2000);
 		}
 		
-		procesoAlmazara.mostrarDatos();
 
 		
 	}

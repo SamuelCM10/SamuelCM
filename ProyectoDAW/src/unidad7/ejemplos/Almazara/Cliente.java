@@ -1,20 +1,32 @@
 package unidad7.ejemplos.Almazara;
 
-public class Clientes {
+public class Cliente {
 	
 	private String id;
 	private String nombre;
 	private boolean socio;
 	private String direccion;
-	private String tlf;
+	private String tfl;
 	private String email;
 	
-	public void Cliente(String id,String nombre,boolean socio) {
+	public Cliente() {
+		
+	}
+	
+	public Cliente(String id,String nombre,boolean socio) {
+		
 		this.id=id;
 		this.nombre=nombre;
 		this.socio=socio;
 	}
 
+	
+	public void mostrarDatos() {
+		
+		System.out.println("ID"+id);
+		System.out.println("Nombre"+nombre);
+		System.out.println("Es socio"+socio);
+	}
 	public String getId() {
 		return id;
 	}
@@ -47,12 +59,12 @@ public class Clientes {
 		this.direccion = direccion;
 	}
 
-	public String getTlf() {
-		return tlf;
+	public String getTfl() {
+		return tfl;
 	}
 
-	public void setTlf(String tlf) {
-		this.tlf = tlf;
+	public void setTfl(String tfl) {
+		this.tfl = tfl;
 	}
 
 	public String getEmail() {
@@ -63,4 +75,7 @@ public class Clientes {
 		this.email = email;
 	}
 	
+	
+	
+
 }
