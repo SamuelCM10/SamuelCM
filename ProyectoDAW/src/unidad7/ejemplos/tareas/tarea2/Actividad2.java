@@ -38,8 +38,10 @@ public class Actividad2 {
         System.out.println("Modelo: " + coche1.getModelo());
         System.out.println("Litros de aceite: " + coche1.getMotor().getL());
         System.out.println("Precio de las averías acumuladas: " + coche1.getPrecioAcumulado());
+        
+        System.out.println(" ");
 
-        System.out.println("\nCoche 2:");
+        System.out.println("Coche 2:");
         System.out.println("Marca: " + coche2.getMarca());
         System.out.println("Modelo: " + coche2.getModelo());
         System.out.println("Litros de aceite: " + coche2.getMotor().getL());
