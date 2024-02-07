@@ -2,11 +2,12 @@ package unidad7.ejemplos.tareas.tarea2;
 
 public class Motor {
 	
-	private int l=0;
+	private int l;
 	private int CV;
 	
 	public Motor(int CV) {
 		this.CV = CV;
+		this.l = 0;
 	}
 
 	public int getL() {
