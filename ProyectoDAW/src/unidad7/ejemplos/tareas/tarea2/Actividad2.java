@@ -15,7 +15,7 @@ public class Actividad2 {
 		
 		Random random = new Random();
 
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 6; i++) {
             if (garaje.aceptarCoche(coche1, "aceite")) {
                 double costeAveria = random.nextDouble() * 100;
                 coche1.acumularAveria(costeAveria);
