@@ -17,7 +17,7 @@ public class GestionPersonal {
 		}else{
 			System.out.println("No son la misma persona.");
 		}
-
+//
 	}
 
 }
