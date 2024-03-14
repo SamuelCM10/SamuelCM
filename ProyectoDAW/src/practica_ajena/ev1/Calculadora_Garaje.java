@@ -1,4 +1,4 @@
-package practica_ajena;
+package practica_ajena.ev1;
 
 import java.util.Scanner;
 
