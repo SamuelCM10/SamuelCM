@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+//Ejercicio 6
+
 public class Tarea {
     // Enumerador para los niveles de prioridad
     enum Priority {

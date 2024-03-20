@@ -6,6 +6,8 @@ import java.util.List;
 
 import practica_ajena.ev2.prioridad_tareas.Tarea.Priority;
 
+//Ejercicio 6
+
 public class ProgramaTarea {
 
 	public static void main(String[] args) {

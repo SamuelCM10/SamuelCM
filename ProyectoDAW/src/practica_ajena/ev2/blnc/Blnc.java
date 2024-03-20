@@ -1,85 +1,8 @@
 package practica_ajena.ev2.blnc;
 
 public class Blnc {
-//Diseña un sistema para gestionar diferentes tipos de empleados en una empresa. Cada empleado tiene un nombre, un salario base y un método para calcular el salario total. Se distinguen tres tipos de empleados: asalariado, por horas y a comisión. Los empleados asalariados reciben un salario fijo mensual, los empleados por horas reciben un salario por hora trabajada, y los empleados a comisión reciben un salario base más una comisión por ventas. Implementa este sistema utilizando herencia y una interfaz para el cálculo del salario total.
-	/*
-	// Interfaz para calcular el salario total
-	interface Calculable {
-	    double calcularSalario();
-	}
+/*
 
-	// Clase base Empleado
-	abstract class Empleado implements Calculable {
-	    protected String nombre;
-	    protected double salarioBase;
-
-	    public Empleado(String nombre, double salarioBase) {
-	        this.nombre = nombre;
-	        this.salarioBase = salarioBase;
-	    }
-	}
-
-	// Clase para empleados asalariados
-	class Asalariado extends Empleado {
-	    public Asalariado(String nombre, double salarioBase) {
-	        super(nombre, salarioBase);
-	    }
-
-	    @Override
-	    public double calcularSalario() {
-	        return salarioBase;
-	    }
-	}
-
-	// Clase para empleados por horas
-	class PorHoras extends Empleado {
-	    private int horasTrabajadas;
-	    private double salarioHora;
-
-	    public PorHoras(String nombre, double salarioBase, int horasTrabajadas, double salarioHora) {
-	        super(nombre, salarioBase);
-	        this.horasTrabajadas = horasTrabajadas;
-	        this.salarioHora = salarioHora;
-	    }
-
-	    @Override
-	    public double calcularSalario() {
-	        return salarioBase + (horasTrabajadas * salarioHora);
-	    }
-	}
-
-	// Clase para empleados a comisión
-	class AComision extends Empleado {
-	    private double ventas;
-	    private double comision;
-
-	    public AComision(String nombre, double salarioBase, double ventas, double comision) {
-	        super(nombre, salarioBase);
-	        this.ventas = ventas;
-	        this.comision = comision;
-	    }
-
-	    @Override
-	    public double calcularSalario() {
-	        return salarioBase + (ventas * comision);
-	    }
-	}
-
-	public class Main {
-	    public static void main(String[] args) {
-	        // Crear instancias de diferentes tipos de empleados
-	        Empleado asalariado = new Asalariado("Juan", 2000);
-	        Empleado porHoras = new PorHoras("María", 0, 40, 10);
-	        Empleado aComision = new AComision("Pedro", 1500, 5000, 0.05);
-
-	        // Calcular salario total de cada empleado
-	        System.out.println("Salario total de " + asalariado.nombre + ": " + asalariado.calcularSalario());
-	        System.out.println("Salario total de " + porHoras.nombre + ": " + porHoras.calcularSalario());
-	        System.out.println("Salario total de " + aComision.nombre + ": " + aComision.calcularSalario());
-	    }
-	    
-	    */
-	//***************************************************************************
 	//Diseña un programa para calcular el área y el perímetro de diferentes formas geométricas: cuadrados y círculos. Implementa una interfaz común para todas las formas que defina métodos para calcular el área y el perímetro, y luego implementa clases para cada forma geométrica que hereden de esta interfaz.
 	
 	/*
