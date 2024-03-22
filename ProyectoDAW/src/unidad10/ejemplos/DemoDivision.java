@@ -17,7 +17,7 @@ public class DemoDivision {
 			
 			resultado = a/b;
 			
-		}catch(ArithmeticException){
+		}catch(ArithmeticException expection){
 			
 			System.out.println();
 			System.out.println();
