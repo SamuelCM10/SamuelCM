@@ -1,0 +1,20 @@
+2024-03-22 10:00:29 DEBUG Programa:14 - Mensaje debug
+2024-03-22 10:00:29 INFO  Programa:15 - Este es un mensaje de infromación
+2024-03-22 10:00:29 WARN  Programa:16 - Este es un mensaje de warning
+2024-03-22 10:00:29 ERROR Programa:17 - Este es un mensaje de error
+2024-03-22 10:00:29 FATAL Programa:18 - Este es un mensaje fatal
+22-03-2024 10:02:01 DEBUG Programa:14 - Mensaje debug
+22-03-2024 10:02:01 INFO  Programa:15 - Este es un mensaje de infromación
+22-03-2024 10:02:01 WARN  Programa:16 - Este es un mensaje de warning
+22-03-2024 10:02:01 ERROR Programa:17 - Este es un mensaje de error
+22-03-2024 10:02:01 FATAL Programa:18 - Este es un mensaje fatal
+22-03-24 10:02:09 DEBUG Programa:14 - Mensaje debug
+22-03-24 10:02:09 INFO  Programa:15 - Este es un mensaje de infromación
+22-03-24 10:02:09 WARN  Programa:16 - Este es un mensaje de warning
+22-03-24 10:02:09 ERROR Programa:17 - Este es un mensaje de error
+22-03-24 10:02:09 FATAL Programa:18 - Este es un mensaje fatal
+22-03-24 10:02:33 DEBUG Programa:14 - Mensaje debug
+22-03-24 10:02:33 INFO  Programa:15 - Este es un mensaje de infromación
+22-03-24 10:02:33 WARN  Programa:16 - Este es un mensaje de warning
+22-03-24 10:02:33 ERROR Programa:17 - Este es un mensaje de error
+22-03-24 10:02:33 FATAL Programa:18 - Este es un mensaje fatal
